@@ -1,5 +1,5 @@
-import BgDestinations from './bg_collections.jpg';
-import BgThemes from './bg_collections_2.jpg';
+import BgDestinations from './assets/bg_collections_small.jpg';
+import BgThemes from './assets/bg_collections_2_small.jpg';
 import './collections.component.css';
 
 export default class CollectionsComponent extends HTMLElement {
