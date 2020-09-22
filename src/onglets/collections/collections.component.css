@@ -1,0 +1,7 @@
+input {
+    height: 55vh;
+}
+
+input:hover {
+    opacity: 60%;
+}

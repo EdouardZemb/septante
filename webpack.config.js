@@ -5,8 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        app: './src/index.js',
-        print: './src/print.js',
+        app: './src/index.js'
     },
     devtool: 'inline-source-map',
     devServer: {
@@ -36,6 +35,17 @@ module.exports = {
                     'css-loader',
                 ],
             },
+            {
+
+                test: /\.(png|svg|jpg|gif)$/,
+       
+                use: [
+       
+                  'file-loader',
+       
+                ],
+       
+              },
         ],
     },
 }

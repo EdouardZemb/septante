@@ -10,7 +10,7 @@
 I'm currently a student in computer sciences and this project is the first not related to school or work.
 
 ## Design
-Before coding the website I made a design using _adobe xd_ just. The main reason is that to have a guide line to follow duri.
+Before coding the website I made a design using _adobe xd_. The main reason is to have a guide line to follow.
 ### Home page
 ![Home Page](/images/Home.png)
 ### Collections
