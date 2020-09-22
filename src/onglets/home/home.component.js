@@ -1,4 +1,4 @@
-import image from './IMG_3350.jpg';
+import image from './home_medium.jpg';
 import './home.component.css';
 
 export default class HomeComponent extends HTMLElement {
