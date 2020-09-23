@@ -1,6 +1,6 @@
 import './style.css';
-import MainComponent from './MainComponent/MainComponent';
-import NavComponent from './NavComponent/nav.component';
+import MainComponent from './main/main.component';
+import NavComponent from './nav/nav.component';
 
 customElements.define('main-component', MainComponent);
 customElements.define('nav-component', NavComponent);

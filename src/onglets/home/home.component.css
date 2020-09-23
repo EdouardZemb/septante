@@ -1,4 +1,14 @@
+@import '../../global-variables.css';
+
+home-component {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 img {
-    height: 55vh;
+    flex-shrink: 1;
+    height: auto;
+    max-width: 75%;
     margin: auto;
 }

@@ -1,5 +1,13 @@
 @import '../global-variables.css';
 
+nav-component {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: static;
+    flex-shrink: 2;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -22,7 +30,6 @@ h1 a {
     font-size: 60pt;
     text-decoration: none;
     color: var(--main-font-color);
-
 }
 
 li {
@@ -31,6 +38,7 @@ li {
     justify-content: center;
     color: var(--main-color);
 }
+
 ul {
     padding: 0;
     margin: 0;
@@ -50,4 +58,10 @@ ul a {
 li a:hover {
     color: var(--main-font-color);
     text-shadow: -2px 0px var(--main-color), 0px 2px var(--main-color),  2px 0px var(--main-color), 0px -2px var(--main-color);
+}
+
+@media screen and (max-width: 900px) {
+    nav-component {
+        height: 75vh;
+    }
 }
