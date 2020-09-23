@@ -6,8 +6,12 @@ customElements.define('home-component', HomeComponent);
 export default class MainComponent extends HTMLElement {
     constructor() {
         super();
+        const home = new HomeComponent;
+
         this.innerHTML = `
-        <home-component></home-component>
+        ${home.htmlTags()}
         `;
     }
+
+
 }

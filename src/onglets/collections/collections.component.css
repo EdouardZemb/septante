@@ -1,7 +1,26 @@
+@import '../../global-variables.css';
+
 input {
     height: 55vh;
+
 }
 
 input:hover {
-    opacity: 60%;
+    opacity: 50%;
+}
+
+span {
+    position: fixed;
+}
+
+.collection-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color-low-opacity);
+    font-size: 2.5em;
+}
+
+.collection-button:hover {
+    color: var(--main-font-color);
 }

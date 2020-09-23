@@ -7,8 +7,10 @@ export default class CollectionsComponent extends HTMLElement {
         super();
 
         this.innerHTML = `
-         <input type="image" src="${BgDestinations}" />
-         <input type="image" src="${BgThemes}" />
+        <div class="collection-button">
+            <input type="image" src="${BgDestinations}"/>
+            <span>destinations</span>
+        </div>
         `;
     }
 }
