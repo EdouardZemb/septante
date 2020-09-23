@@ -1,4 +1,4 @@
-import './style.css';
+import './nav.component.css';
 import CollectionsComponent from '../onglets/collections/collections.component.js';
 import ContactComponent from '../onglets/contact/contact.component.js';
 import InfoComponent from '../onglets/info/info.component.js';
