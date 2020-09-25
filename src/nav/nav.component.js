@@ -1,12 +1,4 @@
 import './nav.component.css';
-import CollectionsComponent from '../onglets/collections/collections.component.js';
-import ContactComponent from '../onglets/contact/contact.component.js';
-import InfoComponent from '../onglets/info/info.component.js';
-
-customElements.define('collections-component', CollectionsComponent);
-customElements.define('contact-component', ContactComponent);
-customElements.define('info-component', InfoComponent);
-
 
 export default class NavComponent extends HTMLElement {
     constructor() {
@@ -41,3 +33,5 @@ export default class NavComponent extends HTMLElement {
         });
     }
 }
+
+customElements.define('nav-component', NavComponent);

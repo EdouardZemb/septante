@@ -7,3 +7,5 @@ export default class InfoComponent extends HTMLElement {
         `;
     }
 }
+
+customElements.define('info-component', InfoComponent);

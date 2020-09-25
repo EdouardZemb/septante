@@ -16,3 +16,5 @@ export default class HomeComponent extends HTMLElement {
         return this.htmlTag;
     }
 }
+
+customElements.define('home-component', HomeComponent);

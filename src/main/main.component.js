@@ -1,7 +1,4 @@
-import HomeComponent from '../onglets/home/home.component.js';
 import './main.component.css';
-
-customElements.define('home-component', HomeComponent);
 
 export default class MainComponent extends HTMLElement {
     constructor() {
@@ -11,6 +8,6 @@ export default class MainComponent extends HTMLElement {
         ${home.htmlTags()}
         `;
     }
-
-
 }
+
+customElements.define('main-component', MainComponent);
