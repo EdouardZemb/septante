@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-main {
+app-component {
     display: flex;
     margin: auto;
     width: 90%;

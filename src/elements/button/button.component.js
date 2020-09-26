@@ -1,4 +1,3 @@
-
 import './button.component.css';
 
 let buttonComponentCounter = 0;
@@ -27,7 +26,6 @@ export default class ButtonComponent extends HTMLElement {
     }
 
     constructor() {
-        // TODO: constructor call illegal ?
         super();
         // la méthode bind permet de forcer une liaison entre une fonction et un objet
         this._onSlotChange = this._onSlotChange.bind(this);

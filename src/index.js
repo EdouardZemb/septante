@@ -1,9 +1,7 @@
 import './style.css';
+import './index.module';
 
+const app = document.createElement('app-component');
 
-document.body.innerHTML = `
-<main>
-    <main-component></main-component>
-    <nav-component></nav-component>
-</main>
-`;
+document.body.appendChild(app);
+
