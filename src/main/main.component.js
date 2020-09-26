@@ -1,15 +1,14 @@
-import './main.component.css';
+//import './main.component.css';
 
 /** Création du template */
+const template = document.createElement('template');
+const home = document.createElement('home-component');
+template.appendChild(home)
 
 
 export default class MainComponent extends HTMLElement {
     constructor() {
         super();
-
-        const template = document.createElement('template');
-        const home = document.createElement('home-component');
-        template.appendChild(home)
 
         this.shadow = this.attachShadow({ mode: 'open' });
 

@@ -2,18 +2,10 @@ const template = document.createElement('template');
 
 template.innerHTML = `
     <style>
-    nav-component {
+    :host {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: static;
-        flex-shrink: 2;
-    }
-
-    @media screen and (max-width: 900px) {
-        nav-component {
-            height: 75vh;
-        }
+        margin: auto;
+        width: 90vw;
     }
     </style>
     <main slot="main">Main Slot</main>

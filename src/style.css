@@ -14,9 +14,3 @@ body {
     display: flex;
     align-items: center;
 }
-
-app-component {
-    display: flex;
-    margin: auto;
-    width: 90%;
-}
