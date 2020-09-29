@@ -2,6 +2,18 @@
 import './button.component.css';
 
 export default class ButtonComponent extends HTMLElement {
+    
+    get buttonText() {}
+
+    get btnBackground() {}
+    
+    set buttonText(value) {
+        this.buttonText = value;
+    }
+
+    set btnBackground(url) {
+        this.btnBackground = url;
+    }
     constructor() {
         // TODO: constructor call illegal ?
         super();
@@ -20,11 +32,6 @@ export default class ButtonComponent extends HTMLElement {
         return this.htmlTag;
     }
 
-    set buttonText(value) {
-        this.buttonText = value;
-    }
 
-    set btnBackground(url) {
-        this.btnBackground = url;
-    }
+
 }
