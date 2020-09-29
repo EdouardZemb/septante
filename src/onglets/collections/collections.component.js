@@ -7,15 +7,19 @@ import './collections.component.css';
 export default class CollectionsComponent extends HTMLElement {
     constructor() {
         super();
+        // this.innerHTML = `
+        // <div class="button-container">
+        //     <input type="image" src="${BgDestinations}"/>
+        //     <span>destination</span>
+        // </div>
+        // <div class="button-container">
+        //     <input type="image" src="${BgThemes}"/>
+        //     <span>themes</span>
+        // </div>
+        // `;
+
         this.innerHTML = `
-        <div class="button-container">
-            <input type="image" src="${BgDestinations}"/>
-            <span>destination</span>
-        </div>
-        <div class="button-container">
-            <input type="image" src="${BgThemes}"/>
-            <span>themes</span>
-        </div>
+            <button is="button-component">Bob</button>
         `;
     }
     

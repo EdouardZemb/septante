@@ -1,37 +1,36 @@
 
 import './button.component.css';
 
-export default class ButtonComponent extends HTMLElement {
-    
-    get buttonText() {}
+export default class ButtonComponent extends HTMLButtonElement {
 
-    get btnBackground() {}
-    
-    set buttonText(value) {
-        this.buttonText = value;
+    get type() {
+        return this.hasAttribute('type');
     }
 
-    set btnBackground(url) {
-        this.btnBackground = url;
+    set type(value) {
+        if (value === 'image') {
+            this.setAttribute('type', value)
+        } else {
+            console.log('the type value is not allowed with the button-component')
+        }
     }
+
     constructor() {
-        // TODO: constructor call illegal ?
         super();
 
-        this.buttonText;
-        this.btnBackground;
-        this.htmlTag = `<${this.buttonText}-button></${this.buttonText}-button>`;
 
-        this.innerHTML = `
-            <input type="image" src="${this.btnBackground}"/>
-            <span>${this.buttonText}</span>
-        `;
     }
 
-    htmlTags() {
-        return this.htmlTag;
+    connectedCallback() {
+        console.log('connectedCallback');
     }
-
-
+    disconnectedCallback() {
+        console.log('disconnectedCallback');
+    }
+    attributeChangedCallback(attrName, oldVal, newVal) {
+        console.log('attributeChangeCallback');
+    }
 
 }
+
+customElements.define('button-component', ButtonComponent, {extends: 'button'} )
